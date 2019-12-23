@@ -1,0 +1,104 @@
+.centre-div {
+  width: 50%;
+  max-width: 30em;
+  min-width: 4em;
+  margin: auto;
+}
+
+.icon {
+  display: block;
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-thing {
+  width: 100%;
+}
+.form-thing input {
+  outline: none;
+}
+.form-thing input[type=email] {
+  background: #FFFFFF;
+  border: 6px solid #979797;
+  border-radius: 10px;
+  font-family: ComicSansMS-Bold;
+  font-size: 28px;
+  color: #969696;
+  letter-spacing: 0;
+  text-align: center;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 2px;
+  padding-bottom: 3px;
+}
+.form-thing input[type=email]:invalid {
+  background: red;
+  color: white;
+}
+.form-thing input[type=email]:valid {
+  background: green;
+}
+.form-thing input[type=email]:valid[value=""] {
+  background: yellow;
+}
+.form-thing input[type=email]:focus {
+  background: yellow;
+  color: #969696;
+}
+.form-thing input[type=submit] {
+  background: #F5A623;
+  border: 6px solid #979797;
+  border-radius: 10px;
+  font-family: ComicSansMS-Bold;
+  font-size: 28px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+}
+.form-thing input[type=submit]:hover {
+  background: #BF00FF;
+}
+
+h1 {
+  color: #FF00F1;
+  text-align: center;
+}
+
+p {
+  color: #BF00FF;
+}
+
+@media (max-width: 915px) {
+  .form-thing input[type=email] {
+    width: 70%;
+  }
+  .form-thing input[type=submit] {
+    width: 29%;
+  }
+}
+@media (max-width: 825px) {
+  .centre-div {
+    text-align: center;
+  }
+
+  .form-thing {
+    font-size: 16px;
+    font-family: ComicSansMS;
+  }
+  .form-thing input[type=email] {
+    font-size: 16px;
+    font-family: ComicSansMS;
+    width: 100%;
+  }
+  .form-thing input[type=submit] {
+    display: block;
+    font-size: 16px;
+    font-family: ComicSansMS;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
