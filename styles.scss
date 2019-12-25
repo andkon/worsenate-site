@@ -55,12 +55,12 @@ body {
       background: green;
 
       &[value=''] {
-        background: yellow;
+        background: #FFF400;
       }
     }
 
     &:focus{
-      background: yellow;
+      background: #FFF400;
       color: #969696;
     }
   }

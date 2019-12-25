@@ -52,10 +52,10 @@ body {
   background: green;
 }
 .form-thing input[type=email]:valid[value=""] {
-  background: yellow;
+  background: #FFF400;
 }
 .form-thing input[type=email]:focus {
-  background: yellow;
+  background: #FFF400;
   color: #969696;
 }
 .form-thing input[type=submit] {
