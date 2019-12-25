@@ -85,6 +85,12 @@ p {
 }
 
 @media (max-width: 915px) {
+  .centre-div {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .form-thing input[type=email] {
     width: 70%;
   }
@@ -92,23 +98,19 @@ p {
     width: 29%;
   }
 }
-@media (max-width: 825px) {
-  .centre-div {
-    text-align: center;
-  }
-
+@media (max-width: 500px) {
   .form-thing {
-    font-size: 16px;
+    font-size: 20px;
     font-family: ComicSansMS;
   }
   .form-thing input[type=email] {
-    font-size: 16px;
+    font-size: 20px;
     font-family: ComicSansMS;
     width: 100%;
   }
   .form-thing input[type=submit] {
     display: block;
-    font-size: 16px;
+    font-size: 20px;
     font-family: ComicSansMS;
     margin-left: auto;
     margin-right: auto;
