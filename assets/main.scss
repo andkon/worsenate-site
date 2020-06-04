@@ -1,0 +1,166 @@
+---
+---
+
+body {
+  background-image: url("images/NightSemiTransparent.png");
+  background-color: black;
+}
+
+.centre-div {
+  width: 50%;
+  max-width: 30em;
+  min-width: 4em;
+  margin: auto;
+
+  .bottom-nav {
+    font-family: Helvetica;
+    font-size: 18px;
+    color: white;
+    opacity: 0.83;
+    letter-spacing: 0;
+    text-align: center;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .readable {
+    font-family: Helvetica;
+    font-size: 14px;
+    color: white;
+    opacity: 0.83;
+    letter-spacing: 0;
+    text-align: left;
+
+    h1 {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+  a {
+    color: #FB31A9;
+  }
+}
+
+.icon {
+  display: block;
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-thing {
+  width: 100%;
+
+  input {
+    outline: none;
+  }
+
+  input[type='email'] {
+    width: 70%;
+    background: #FFFFFF;
+    border: 6px solid #979797;
+    border-radius: 10px;
+    font-family: ComicSansMS-Bold;
+    font-size: 28px;
+    color: #969696;
+    letter-spacing: 0;
+    text-align: center;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-top: 2px;
+    padding-bottom: 3px;
+
+    &:invalid{
+      background: red;
+      color: white;
+    }
+
+    &:valid {
+      background: green;
+
+      &[value=''] {
+        background: #FFF400;
+      }
+    }
+
+    &:focus{
+      background: #FFF400;
+      color: #969696;
+    }
+  }
+
+  input[type='submit'] {
+    display: inline;
+    margin-left: auto;
+    background: #F5A623;
+    border: 6px solid #979797;
+    border-radius: 10px;
+    font-family: ComicSansMS-Bold;
+    font-size: 28px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+
+    &:hover{
+      background: #BF00FF;
+    }
+  }
+}
+
+h1 {
+  text-align: center;
+  opacity: 0.83;
+  font-family: Helvetica;
+  font-weight: 200;
+  font-size: 24px;
+  color: #FFFFFF;
+  letter-spacing: -1.6px;
+}
+
+@media (max-width:915px) {
+  .centre-div {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-thing {
+    input[type='email'] {
+      width: 70%;
+    }
+
+    input[type='submit'] {
+      width: 29%;
+    }
+  }
+}
+
+
+@media (max-width:500px) {
+  .form-thing {
+    font-size: 20px;
+    font-family: ComicSansMS;
+
+    input[type='email'] {
+      font-size: 20px;
+      font-family: ComicSansMS;
+
+      width: 100%;
+
+    }
+
+    input[type='submit'] {
+      display: block;
+      font-size: 20px;
+      font-family: ComicSansMS;
+
+      margin-left: auto;
+      margin-right: auto;
+      width: 6em;
+    }
+  }
+}
